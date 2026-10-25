@@ -48,6 +48,20 @@ This project was developed using React, JavaScript, HTML, CSS, and Vite. React w
 
 This project gave me experience working with React and developing an interactive web application. It also helped me practice organizing frontend components and working with different application features. Etherium is a project I can continue improving by adding more functionality and improving the overall user experience.
 
+
 ## Project Screenshots
 
-Screenshots of the application's interface, journaling features, and mood tracking will be added here.
+### 1. Home Dashboard
+![Etherium Dashboard](screenshots/Dashboard.png)
+
+This is the main dashboard where users can access the application's features.
+
+### 2. Journal Entry
+![Journal Entry](screenshots/journal.png)
+
+This page allows users to write and manage their daily journal entries.
+
+### 3. Mood Tracking
+![Mood Tracking](screenshots/Mood_Tracker.png)
+
+This feature helps users track their emotions and stay engaged with journaling.
