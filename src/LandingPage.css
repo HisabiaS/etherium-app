@@ -1,0 +1,259 @@
+/* Base styles for the mobile screen container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5; 
+    font-family: sans-serif;
+    overflow: hidden; 
+}
+
+/* Mobile Device Mockup Container  */
+.mobile-screen {
+    width: 375px; 
+    height: 812px; 
+    background-color: #1a1a2e; 
+    color: white;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden; 
+
+    background: none;
+}
+
+.mobile-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background-image: url('/auto.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+     
+  z-index: -1;                    
+}
+
+
+
+/* --- Landing Page Specific Styles --- */
+.landing-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    /* Reduced Top Padding slightly more to gain space */
+    padding-top: 0px; 
+    align-items: flex-start; 
+}
+
+
+.subheading {
+  background: linear-gradient(to right, #a3eafc, #c8a2ff);
+  /* --- commit --- */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.2rem;
+  font-family: 'Stint Ultra Expanded', sans-serif;
+  text-align: center;
+  text-shadow: 0 1px 4px rgba(255, 8, 148, 0.297);
+  font-weight: 750;
+  margin-top: 2%;
+  margin-bottom: 0px;
+  letter-spacing: 0.4px;
+  padding: 0;
+  width: 100%;
+
+}
+
+.subheading {
+  animation: shimmer 2s infinite ease-in-out;
+}
+
+@keyframes shimmer {
+  0%, 100% {
+    opacity: 0.99;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.748);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 12px rgba(255,255,255,0.8);
+  }
+}
+
+
+
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3.5rem; 
+    padding: 0;
+    font-weight: 900; 
+    color: #12b5ac; 
+    line-height: 1.05; 
+    margin-top: 1.3%;
+    margin-bottom: 0px; 
+    text-align: left; 
+    width: 100%; 
+
+
+}
+
+/* Mood Indicator Area - Static background color */
+.mood-indicator-area {
+    width: 100%;
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background-color: transparent; 
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.05) translateY(-8px);
+  }
+}
+
+/* Mood Face Image */
+.mood-face-image {
+    height: 950%;
+    width: auto;
+    max-height: 1000px;
+    object-fit: contain; 
+    pointer-events: none;     
+    z-index: 0;                
+    animation: float 4s ease-in-out infinite;
+    transition: transform 0.6s ease-out, filter 0.4s ease;
+
+    margin-top: 35px; 
+
+}
+
+.mood-text-display {
+    display: none; 
+}
+
+/* --- Mood Selector Slider --- */
+.mood-selector-slider {
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mood-options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 6px;
+}
+
+.mood-label-text {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: bolder;
+}
+
+/* --- Styling the actual range input --- */
+#moodSlider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 20px; 
+    background: linear-gradient(to right, #E11D48 0%, #EC4899 50%, #F472B6 100%);
+    border-radius: 20px;
+    border: 4px solid #f1eaa2; 
+    box-shadow: inset 0 0 0 4px #66a3ff; 
+    cursor: pointer;
+    margin: 0px 0;
+}
+
+/* Styling the slider thumb (handle) for Webkit (Chrome/Safari) */
+#moodSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 60px;
+    height: 60px;
+    background: url('/sparkle_point.png') no-repeat center center;
+    background-size: 345%; 
+    border: none;
+    cursor: pointer;
+    margin-top: -15px; 
+}
+
+/* Styling the slider thumb (handle) for Mozilla (Firefox) */
+#moodSlider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: white;
+    border: 4px solid #1ED1C0;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 0, 119, 0.8);
+}
+
+/* --- Confirm Button Style --- */
+.confirm-button {
+    width: 70%;
+    padding: 12px 0;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffaa2b        ; 
+    color: rgba(245, 225, 231, 0.632);
+    font-size: 1rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    border: 3px solid #25009622; 
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 105, 135, 0.5); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.confirm-button:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 0 25px #ffaa2b,
+        0 0 50px #12b5ac;
+}
+
+.mood-verification-text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: -30px;
+
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.99rem;
+    font-weight: 600;
+
+    /* soft warm peach (readable on blue) */
+    color: #ffffffac;
+
+    /* minimal glow for visibility */
+    text-shadow:
+        0 0 4px rgba(255, 200, 150, 0.4);
+}
+
