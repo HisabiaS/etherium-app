@@ -1,16 +1,53 @@
-# React + Vite
+# Etherium App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Etherium is a journaling application that makes daily journaling more interactive through gamification and mood tracking. The goal of this project is to encourage users to write about their day, track their emotions, and build a consistent journaling habit.
 
-Currently, two official plugins are available:
+## Project Objective
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The main objective of Etherium is to make journaling more engaging instead of feeling like a daily task. The app focuses on combining personal journaling with mood tracking and game-like elements to encourage users to stay consistent.
 
-## React Compiler
+## Development Process
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project was developed using React, JavaScript, HTML, CSS, and Vite. React was used to build the user interface, while JavaScript handles the application's functionality. During development, the focus was on creating an interactive experience that is simple for users to navigate.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Journaling:** Provides a space for users to record their thoughts and daily experiences.
+- **Mood Tracking:** Focuses on helping users keep track of how they feel.
+- **Gamification:** Adds game-like elements to make journaling more engaging.
+
+## Technologies Used
+
+- React
+- JavaScript
+- HTML and CSS
+- Vite
+- Git and GitHub
+
+## How to Run
+
+1. Clone the repository:
+
+   `git clone https://github.com/HisabiaS/etherium-app.git`
+
+2. Open the project folder:
+
+   `cd etherium-app`
+
+3. Install the dependencies:
+
+   `npm install`
+
+4. Start the application:
+
+   `npm run dev`
+
+5. Open the local URL displayed in the terminal.
+
+## Project Outcome
+
+This project gave me experience working with React and developing an interactive web application. It also helped me practice organizing frontend components and working with different application features. Etherium is a project I can continue improving by adding more functionality and improving the overall user experience.
+
+## Project Screenshots
+
+Screenshots of the application's interface, journaling features, and mood tracking will be added here.
